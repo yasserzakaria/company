@@ -70,7 +70,7 @@
                         </div>
                         <div class="form-group col-sm-12">
                             <label >تفاصيل التدوينة</label>
-                            <textarea name="blog-body" required placeholder="النص" cols="30" rows="5" class="form-control custom-form-control input-lg"></textarea>
+                            <textarea id="tinymcec" name="blog-body" required placeholder="النص" cols="30" rows="5" class="form-control custom-form-control input-lg"></textarea>
                         </div>
                         <div class="form-group col-sm-12">
                             <button class="btn custom-btn btn-primary custom-btn-main">
@@ -120,6 +120,11 @@
     <script src="js/jquery-2.2.4.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/script.js"></script>
+    <!-- cdn for tinymce editor for add blog page only -->
+    <script src="http://cdn.tinymce.com/4/tinymce.min.js"></script>
+    <!-- init tinymce with selector #tinymces -->
+    <script>tinymce.init({ selector:'#tinymcec' });</script>
+    <!-- end cdn for tinymce editor for add blog page only -->
 </body>
 
 </html>
